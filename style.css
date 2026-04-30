@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(to right,#a8dc4e, #e3f2fd, #a8dc4e);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.card {
+    background: linear-gradient(to right,#e3f2fd,  #e3f2fd);
+   text-shadow: 0.5px 0.5px 1px black;
+}
+
+/* Biar footer selalu di bawah */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Konten utama dorong footer */
+.container {
+    flex: 1;
+}
+
+/* Footer sosial */
+.footer-sosial {
+    display: flex;
+    justify-content: center;
+    background-color: #a8dc4e;
+    margin-top: auto;
+}
+
+/* Link sosial (diperkecil) */
+.footer-sosial a {
+    flex: 1;
+    text-align: center;
+    padding: 6px;           /* lebih kecil */
+    font-size: 13px;        /* kecilin teks */
+    border-right: 1px solid white;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer-sosial a:last-child {
+    border-right: none;
+}
+
+/* Hover biar ada efek */
+.footer-sosial a:hover {
+    background-color: #a8dc4e;
+    color: white;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
