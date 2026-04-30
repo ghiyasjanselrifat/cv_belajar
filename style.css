@@ -1,34 +1,46 @@
 body {
-    background: linear-gradient(to right,#a8dc4e, #e3f2fd, #a8dc4e);
+    background: linear-gradient(to right, #a8dc4e, #e3f2fd, #a8dc4e);
     font-family: 'Poppins', sans-serif;
 }
 
-
-.card {
-    background: linear-gradient(to right,#e3f2fd,  #e3f2fd);
-   text-shadow: 0.5px 0.5px 1px black;
-}
-
-/* Biar footer selalu di bawah */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Container biar tidak terlalu lebar di laptop */
 .container {
-  width: 90%;
-  max-width: 800px; /* biar tetap enak di laptop */
-  margin: auto;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Card (kalau dipakai nanti) */
+.card {
+    background: #e3f2fd;
+    text-shadow: 0.5px 0.5px 1px black;
+    border-radius: 10px;
+}
+
+/* Gambar profil */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tabel CV */
+table {
+    background-color: white;
+}
+
+td, th {
+    padding: 10px;
+}
+
+/* Header tabel */
+.table-dark {
+    text-align: center;
+}
+
+/* Responsive table (penting untuk HP) */
+.table-responsive {
+    overflow-x: auto;
 }
 
 /* Footer sosial */
@@ -37,42 +49,50 @@ img {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap; /* biar turun di HP */
+    margin-top: 20px;
+    padding: 10px;
 }
 
+/* Link sosial */
 .footer-sosial a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
 }
 
-.footer-sosial i {
-    font-size: 18px;
-}
-
-/* Link sosial (diperkecil) */
-.footer-sosial a {
-    text-align: center;
-    padding: 6px;
-    font-size: 13px;
-    border-right: 1px solid white;
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.footer-sosial a:last-child {
-    border-right: none;
-}
-
-/* Hover biar ada efek */
+/* Hover effect */
 .footer-sosial a:hover {
     background-color: #a8dc4e;
     color: white;
 }
 
+/* Judul */
 h1, h2 {
     font-weight: bold;
+    text-align: center;
+}
+
+/* 📱 Khusus HP */
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 20px;
+    }
+
+    td, th {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    img {
+        max-width: 100px;
+    }
+
+    .footer-sosial {
+        gap: 10px;
+    }
 }
