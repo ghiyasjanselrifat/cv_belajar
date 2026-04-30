@@ -50,9 +50,10 @@ td, th {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap; /* biar turun di HP */
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: auto;
 }
+
+
 
 /* Link sosial */
 .footer-sosial a {
