@@ -20,25 +20,43 @@ body {
     flex-direction: column;
 }
 
-/* Konten utama dorong footer */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-    flex: 1;
+  width: 90%;
+  max-width: 800px; /* biar tetap enak di laptop */
+  margin: auto;
 }
 
 /* Footer sosial */
 .footer-sosial {
     display: flex;
     justify-content: center;
-    background-color: #a8dc4e;
-    margin-top: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-sosial a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-sosial i {
+    font-size: 18px;
 }
 
 /* Link sosial (diperkecil) */
 .footer-sosial a {
-    flex: 1;
     text-align: center;
-    padding: 6px;           /* lebih kecil */
-    font-size: 13px;        /* kecilin teks */
+    padding: 6px;
+    font-size: 13px;
     border-right: 1px solid white;
     color: black;
     text-decoration: underline;
